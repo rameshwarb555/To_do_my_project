@@ -1,0 +1,98 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .todo-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  .todo-item p {
+    margin: 0;
+    padding: 0 10px;
+    flex: 1;
+    overflow-wrap: break-word;
+  }
+  
+      
+      .todo-item input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 10px;
+      }
+      
+      .todo-item button {
+        border-radius: 5px;
+        margin-left: 10px;
+       background-color: #fff;
+    border: 1px solid #ddd;
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        color: #333;
+        transition: color 0.2s ease-in-out;
+      }
+      
+      .todo-item button:hover {
+        color: #ff7f50;
+      }
+      
+      .todo-item button:not(:last-child) {
+        margin-right: 5px;
+      }
+      
+      .todo-item button svg {
+        fill: #333;
+        transition: fill 0.2s ease-in-out;
+      }
+      
+      .todo-item button:hover svg {
+        fill: #ff7f50;
+      }
+      
+      .todo-item .edit-input {
+        margin-right: 5px;
+        flex: 1;
+      }
+      
+      .todo-item .edit-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .todo-item .edit-buttons button {
+        margin: 0 5px;
+      }
+      
+      .todo-item .edit-buttons button:first-child {
+        margin-left: 0;
+      }
+      
+      .todo-item .edit-buttons button:last-child {
+        margin-right: 0;
+      }
+      
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      .todo-item .animated {
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      
